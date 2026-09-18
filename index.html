@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Прийом металобрухту Ковель — Найкращі ціни | Чорний та Кольоровий метал</title>
+    <meta name="description" content="Прийом чорного та кольорового металобрухту в Ковелі. Найкращі ціни, точна вага, миттєвий розрахунок, самовивіз та демонтаж. Телефонуйте: +380966862064">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-dark: #121417;
+            --bg-card: #1c1f26;
+            --accent-yellow: #ffb703;
+            --accent-orange: #fb8500;
+            --text-main: #f1f1f1;
+            --text-muted: #a0a5b5;
+            --copper-color: #d97706;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+        }
+
+        body {
+            line-height: 1.6;
+        }
+
+        /* Container */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(18, 20, 23, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 15px 0;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            color: var(--accent-yellow);
+        }
+
+        .header-phone {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--accent-yellow);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .header-phone:hover {
+            color: var(--accent-orange);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 160px 0 90px;
+            background: linear-gradient(135deg, rgba(18, 20, 23, 0.9) 0%, rgba(28, 31, 38, 0.8) 100%), 
+                        url('https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+            text-align: center;
+            border-bottom: 2px solid var(--accent-yellow);
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            line-height: 1.2;
+            text-transform: uppercase;
+        }
+
+        .hero h1 span {
+            color: var(--accent-yellow);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            max-width: 800px;
+            margin: 0 auto 35px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 16px 32px;
+            font-size: 1rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+
+        .btn-primary {
+            background: linear-gradient(45deg, var(--accent-yellow), var(--accent-orange));
+            color: #000;
+            box-shadow: 0 4px 15px rgba(251, 133, 0, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(251, 133, 0, 0.6);
+        }
+
+        .btn-viber {
+            background-color: #7360f2;
+            color: #fff;
+        }
+
+        .btn-telegram {
+            background-color: #24a1de;
+            color: #fff;
+        }
+
+        .btn-viber:hover, .btn-telegram:hover {
+            transform: translateY(-2px);
+            opacity: 0.9;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 80px 0;
+            background-color: var(--bg-dark);
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 50px;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: var(--accent-yellow);
+            margin: 15px auto 0;
+            border-radius: 2px;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .feature-card {
+            background: var(--bg-card);
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-yellow);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            display: inline-block;
+        }
+
+        .feature-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .feature-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        /* Metals Section */
+        .metals {
+            padding: 80px 0;
+            background: #181a20;
+        }
+
+        .metals-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .metal-card {
+            background: var(--bg-card);
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .metal-card-header {
+            padding: 20px;
+            font-size: 1.3rem;
+            font-weight: 700;
+            background: rgba(255, 255, 255, 0.03);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .metal-card-header.color {
+            color: var(--accent-yellow);
+        }
+
+        .metal-card-body {
+            padding: 25px;
+        }
+
+        .metal-list {
+            list-style: none;
+        }
+
+        .metal-list li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 12px;
+            color: var(--text-muted);
+        }
+
+        .metal-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--accent-yellow);
+            font-weight: bold;
+        }
+
+        /* Steps Section */
+        .steps {
+            padding: 80px 0;
+            background-color: var(--bg-dark);
+        }
+
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .step-card {
+            background: var(--bg-card);
+            padding: 30px;
+            border-radius: 12px;
+            position: relative;
+        }
+
+        .step-number {
+            font-size: 3rem;
+            font-weight: 800;
+            color: rgba(255, 183, 3, 0.2);
+            position: absolute;
+            top: 10px;
+            right: 20px;
+        }
+
+        .step-card h3 {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        .step-card p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        /* Contacts & Map */
+        .contacts {
+            padding: 80px 0;
+            background: #181a20;
+        }
+
+        .contacts-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            background: var(--bg-card);
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .contacts-info {
+            padding: 40px;
+        }
+
+        .contact-item {
+            margin-bottom: 25px;
+        }
+
+        .contact-item h4 {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+
+        .contact-item p, .contact-item a {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .contact-item a:hover {
+            color: var(--accent-yellow);
+        }
+
+        .map-container {
+            width: 100%;
+            min-height: 350px;
+            background: #222;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* Floating Call Button for Mobile */
+        .float-call {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: var(--accent-yellow);
+            color: #000;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            text-decoration: none;
+            z-index: 999;
+            transition: transform 0.3s;
+        }
+
+        .float-call:hover {
+            transform: scale(1.1);
+        }
+
+        /* Footer */
+        footer {
+            padding: 25px 0;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 1.8rem; }
+            .hero p { font-size: 1rem; }
+            .contacts-wrapper { grid-template-columns: 1fr; }
+            .map-container { height: 300px; }
+            .header-phone { font-size: 0.95rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">Метал<span>Ковель</span></div>
+            <a href="tel:+380966862064" class="header-phone">📞 +380 96 686 2064</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Прийом металобрухту в Ковелі за <span>найвищою ціною</span></h1>
+            <p>Приймаємо чорний та кольоровий метал. Точне зважування, миттєва оплата готівкою або на картку. Надаємо послуги самовивозу та демонтажу.</p>
+            
+            <div class="cta-buttons">
+                <a href="tel:+380966862064" class="btn btn-primary">📞 Зателефонувати (Максим)</a>
+                <a href="viber://chat?number=%2B380930581223" class="btn btn-viber">Viber</a>
+                <a href="https://t.me/+380930581223" class="btn btn-telegram">Telegram</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Чому обирають нас</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <span class="feature-icon">💰</span>
+                    <h3>Найкращі ціни</h3>
+                    <p>Щоденно моніторимо ринок та пропонуємо найвищу вартість за кілограм.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">⚖️</span>
+                    <h3>Чесна вага</h3>
+                    <p>Точні електронні ваги. Зважуємо чесно та прозоро прямо при вас.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">💵</span>
+                    <h3>Миттєва оплата</h3>
+                    <p>Розрахунок на місці одразу після зважування (готівка або переказ).</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">🚚</span>
+                    <h3>Вивіз та демонтаж</h3>
+                    <p>Маємо власний транспорт і обладнання для демонтажу та самовивозу.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Metals List -->
+    <section class="metals">
+        <div class="container">
+            <h2 class="section-title">Який метал ми приймаємо</h2>
+            <div class="metals-grid">
+                
+                <!-- Кольоровий -->
+                <div class="metal-card">
+                    <div class="metal-card-header color">
+                        🟡 Кольоровий метал (Цветмет)
+                    </div>
+                    <div class="metal-card-body">
+                        <ul class="metal-list">
+                            <li><strong>Мідь:</strong> кабель, шини, трансформатори, блиск, мікс</li>
+                            <li><strong>Латунь та Бронза:</strong> радіатори, сантехніка, стружка</li>
+                            <li><strong>Алюміній:</strong> профіль, диски, моторка, банка</li>
+                            <li><strong>Нержавіюча сталь:</strong> промислова та побутова</li>
+                            <li><strong>Свинець та Акумулятори (АКБ):</strong> будь-які типи</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Чорний -->
+                <div class="metal-card">
+                    <div class="metal-card-header">
+                        ⬛ Чорний метал (Чермет)
+                    </div>
+                    <div class="metal-card-body">
+                        <ul class="metal-list">
+                            <li><strong>Габаритний та негабаритний брухт:</strong> арматура, швелери, труби</li>
+                            <li><strong>Чавун:</strong> батареї, ванни, промислові деталі</li>
+                            <li><strong>Автомобільний брухт:</strong> кузови, мости, агрегати</li>
+                            <li><strong>Побутовий метал:</strong> огорожі, верстати, металоконструкції</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Steps -->
+    <section class="steps">
+        <div class="container">
+            <h2 class="section-title">Як здати метал за 3 кроки</h2>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">01</div>
+                    <h3>Дзвінок або повідомлення</h3>
+                    <p>Зв'яжіться з нами по телефону або у месенджерах, щоб уточнити актуальну ціну.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">02</div>
+                    <h3>Зважування / Вивіз</h3>
+                    <p>Привезіть метал на наш пункт або замовте послугу самовивозу чи демонтажу.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">03</div>
+                    <h3>Отримання грошей</h3>
+                    <p>Отримайте повний розрахунок зручним для вас способом одразу на місці.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacts -->
+    <section class="contacts">
+        <div class="container">
+            <h2 class="section-title">Контакти та локація</h2>
+            <div class="contacts-wrapper">
+                <div class="contacts-info">
+                    <div class="contact-item">
+                        <h4>Адреса пункту:</h4>
+                        <p>Волинська область, м. Ковель,<br>вул. Володимирська, 150</p>
+                    </div>
+                    <div class="contact-item">
+                        <h4>Прямий дзвінок (Максим):</h4>
+                        <a href="tel:+380966862064">+380 96 686 2064</a>
+                    </div>
+                    <div class="contact-item">
+                        <h4>Viber / Telegram:</h4>
+                        <a href="viber://chat?number=%2B380930581223">+380 93 058 1223</a>
+                    </div>
+                    <div class="contact-item">
+                        <h4>Графік роботи:</h4>
+                        <p>Пн - Сб: 08:00 – 18:00<br>Нд: за домовленістю</p>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <!-- Google Maps Iframe -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2508.8266205721867!2d24.698305315752702!3d51.21209897958742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472530eb7aa091ed%3A0x8898166c3c528f80!2zdnVsLiBWb2xvZHlteXJza2EsIDE1MCwgS292ZWwnLCBWb2x5bnNrYSBvYmxhc3QsIDQ1MDA0!5e0!3m2!1suk!2sua!4v1680000000000!5m2!1suk!2sua" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile Quick Call Button -->
+    <a href="tel:+380966862064" class="float-call" title="Зателефонувати">📞</a>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Прийом металобрухту Ковель. Усі права захищено.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
